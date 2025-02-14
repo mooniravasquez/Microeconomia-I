@@ -102,7 +102,8 @@ Cuando los valores propios son complejos:
 - Horn, R. A., & Johnson, C. R. (2012). Matrix Analysis (2nd ed.). Cambridge University Press.
 - Axler, S. (2015). Linear Algebra Done Right (3rd ed.). Springer.
 - Strang, G. (2016). Introduction to Linear Algebra.
-- Boyce, W. E., & DiPrima, R. C. (2017). Elementary Differential Equations.
+- Robinson, J. (2004). An Introduction to Elementary Differential Equations. Cambridge.
+- Hoffman, K., & Kunze, R. (1971). Linear Algebra (2nd Edition). Pearson
 
 
 
