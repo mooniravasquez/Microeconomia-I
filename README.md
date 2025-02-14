@@ -38,8 +38,8 @@ Las soluciones se calculan de diferentes maneras.
 ## Referencias
 
 Para profundizar más sobre cómo se resuelven estos sistemas de EDOs, puedes consultar las siguientes fuentes:
-- Robinson, J. (2004). An Introduction to Elementary Differential Equations. Cambridge.
-- Hoffman, K., & Kunze, R. (1971). Linear Algebra (2nd Edition). Pearson
+- Hoffman, K., & Kunze, R. (1971). Linear Algebra. Prentice-Hall.
+- Robinson, J. (2004). An Introduction to Ordinary Differential Equations. Cambridge University Press.
 
 
 
