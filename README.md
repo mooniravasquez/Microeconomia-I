@@ -60,7 +60,7 @@ donde `I` es la matriz identidad `2x2`. Expandiendo el determinante:
     | a21      a22 - λ |
 ```
 
-### ***Encontrar los Vectores Propios**
+### **Encontrar los Vectores Propios**
 Para cada `λ_i`, resolvemos:
 
 ```
