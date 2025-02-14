@@ -4,7 +4,8 @@
 Este repositorio explica cómo resolver ecuaciones diferenciales ordinarias (EDOs) de primer orden en **forma matricial (2x2)**, utilizando valores y vectores propios.
 
 ## ✏️ Planteamiento del Problema
-Dado un sistema de ecuaciones diferenciales:
+Dado un sistema de ecuaciones diferenciales ordinarias.
+- Las Ecuaciones Diferenciales Ordinarias (EDOs) son ecuaciones que relacionan una función desconocida con sus derivadas. Se llaman ordinarias porque involucran derivadas respecto a una sola variable independiente.
 
 ```
  x1' = a11 * x1 + a12 * x2
@@ -22,14 +23,6 @@ O más compacto:
 
 ```
     x' = A * x
-```
-# Ecuaciones Diferenciales Ordinarias (EDOs)
-Las Ecuaciones Diferenciales Ordinarias (EDOs) son ecuaciones que relacionan una función desconocida con sus derivadas. Se llaman ordinarias porque involucran derivadas respecto a una sola variable independiente.
-
-Una **Ecuación Diferencial Ordinaria (EDO) lineal de primer orden** en forma matricial se expresa como:
-
-```
-    dx/dt = A * x
 ```
 
 donde:
