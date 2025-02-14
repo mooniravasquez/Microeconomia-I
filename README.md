@@ -37,7 +37,7 @@ Si no hay suficientes, se buscan vectores propios generalizados, resolviendo (�
 ## Valores propios reales y complejos
 Si la matriz 𝐴 tiene coeficientes reales pero los valores propios son complejos, estos siempre aparecen en pares conjugados de la forma 𝜆=𝑎±𝑏𝑖
 
-Pasos a seguir
+*Pasos a seguir*
 1. Se calculan los valores propios resolviendo det(A−λI)=0.
 2. Se encuentran los vectores propios complejos resolviendo (A−λI)x=0.
 3. Como la matriz tiene coeficientes reales, en lugar de vectores propios complejos se usan pares de bases reales, formadas por la parte real e imaginaria de los vectores propios complejos.
