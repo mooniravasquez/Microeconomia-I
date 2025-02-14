@@ -67,130 +67,74 @@ Si la matriz 𝐴 tiene coeficientes reales pero los valores propios son complej
 
 # Resolución de Ecuaciones Diferenciales Ordinarias (EDOs) Lineales con Matrices 2x2
 
-## 1. Definición de EDOs y Sistemas de Ecuaciones
+## 1. Definición de una EDO Lineal
 
-Una **Ecuación Diferencial Ordinaria (EDO) lineal de primer orden** se expresa como:
+Una **Ecuación Diferencial Ordinaria (EDO) lineal de primer orden** en forma matricial se expresa como:
 
 ```
- dx/dt = A * x
+    dx/dt = A * x
 ```
 
 donde:
-- `x` es un vector incógnita con dos funciones de `t`:
-  ```
-  x = [ x1 ]
-      [ x2 ]
-  ```
-- `A` es una matriz `2x2` de coeficientes constantes:
-  ```
-  A = [ a11  a12 ]
-      [ a21  a22 ]
-  ```
-- `dx/dt` representa la derivada de cada función con respecto a `t`.
+- `x` es un vector columna con funciones dependientes del tiempo.
+- `A` es una matriz `2x2` de coeficientes constantes.
 
-Este sistema de ecuaciones diferenciales se puede resolver usando **valores propios y vectores propios** de `A`.
+## 2. Pasos para Resolver el Sistema `x' = A*x`
 
-## 2. Pasos para Resolver el Sistema `dx/dt = Ax`
-
-### Paso 1: Calcular los Valores Propios de `A`
-
+### **Paso 1: Calcular los Valores Propios de A**
 Los valores propios `λ` de `A` se obtienen resolviendo el **polinomio característico**:
 
 ```
- det(A - λI) = 0
+    det(A - λI) = 0
 ```
 
-donde `I` es la matriz identidad `2x2`:
+donde `I` es la matriz identidad `2x2`. Expandiendo el determinante:
 
 ```
- I = [ 1  0 ]
-     [ 0  1 ]
+    | a11 - λ   a12 |  =  0
+    | a21      a22 - λ |
 ```
 
-Expandiendo el determinante:
+### **Paso 2: Encontrar los Vectores Propios**
+Para cada `λ_i`, resolvemos:
 
 ```
- (a11 - λ)(a22 - λ) - (a12 * a21) = 0
+    (A - λI) * v = 0
 ```
 
-Esto nos da dos soluciones, los valores propios de `A`.
+donde `v` es el vector propio correspondiente a `λ_i`.
 
-### Paso 2: Encontrar los Vectores Propios
-
-Para cada valor propio `λi`, resolvemos:
-
-```
- (A - λi I) * vi = 0
-```
-
-donde `vi` es el **vector propio asociado a `λi`**:
+### **Paso 3: Construir la Solución General**
+La solución general del sistema es:
 
 ```
- vi = [ vi1 ]
-      [ vi2 ]
+    x(t) = C1 * e^(λ1 * t) * v1 + C2 * e^(λ2 * t) * v2
 ```
 
-### Paso 3: Construir la Solución General
-
-La solución del sistema se basa en la **combinación lineal de las soluciones básicas**:
-
-```
- x(t) = C1 * e^(λ1 t) * v1 + C2 * e^(λ2 t) * v2
-```
-
-donde `C1` y `C2` son constantes de integración.
+donde `C1` y `C2` son constantes determinadas por las condiciones iniciales.
 
 ## 3. Casos según los Valores Propios
 
-### Caso 1: Valores Propios Reales y Distintos (`λ1 ≠ λ2`)
-
-La solución es:
-
-```
- x(t) = C1 * e^(λ1 t) * v1 + C2 * e^(λ2 t) * v2
-```
-
-### Caso 2: Valores Propios Reales e Iguales (`λ1 = λ2 = λ`)
-
-Si hay un solo vector propio, se usa un **vector generalizado** `vg`:
+### **Caso 1: Valores Propios Reales y Distintos (`λ1 ≠ λ2`)**
+Si `A` es diagonalizable, la solución toma la forma:
 
 ```
- x(t) = C1 * e^(λ t) * v1 + C2 * t * e^(λ t) * vg
+    x(t) = C1 * e^(λ1 * t) * v1 + C2 * e^(λ2 * t) * v2
 ```
 
-### Caso 3: Valores Propios Complejos (`λ = a ± bi`)
-
-La solución general es:
+### **Caso 2: Valores Propios Reales e Iguales (`λ1 = λ2`)**
+Si `A` no es diagonalizable, se necesita un vector generalizado `v_g`:
 
 ```
- x(t) = e^(at) * (C1 * cos(bt) + C2 * sin(bt))
+    x(t) = C1 * e^(λ t) * v1 + C2 * t * e^(λ t) * v_g
 ```
 
-## 4. Implementación en Python
+### **Caso 3: Valores Propios Complejos (`λ = a ± bi`)**
+Cuando los valores propios son complejos:
 
-```python
-import numpy as np
-from scipy.linalg import eig, expm
-
-def solve_system(A, x0, t):
-    """ Resuelve el sistema dx/dt = Ax con valores y vectores propios """
-    eigvals, eigvecs = eig(A)  # Calcula valores y vectores propios
-    C = np.linalg.solve(eigvecs, x0)  # Resuelve para constantes iniciales
-    solution = sum(C[i] * np.exp(eigvals[i] * t) * eigvecs[:, i] for i in range(len(eigvals)))
-    return solution.real  # Devuelve parte real si hay números complejos
-
-# Definir matriz A y condición inicial x0
-A = np.array([[3, 1], [0, 2]])
-x0 = np.array([1, 0])
-t = np.linspace(0, 5, 100)  # Tiempo de 0 a 5
-
-# Resolver sistema para cada tiempo
-dynamics = np.array([solve_system(A, x0, ti) for ti in t])
-
-print("Solución en distintos tiempos:")
-print(dynamics)
+```
+    x(t) = e^(a t) * (C1 * cos(bt) + C2 * sin(bt))
 ```
 
-## 5. Referencias
-- Strang, G. (2016). *Introduction to Linear Algebra*.
-- Boyce, W. E., & DiPrima, R. C. (2017). *Elementary Differential Equations*.
+
+
