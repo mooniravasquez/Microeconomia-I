@@ -44,7 +44,7 @@ Pasos a seguir
 4. La matriz no es diagonalizable en el espacio real, pero se puede escribir en forma canónica de Jordan o en una forma de bloques de rotación. Donde cada bloque de  2×2 representa la acción de una transformación con valores propios a±bi (Lay, 2015).
 
 ## Referencias
-Strang, G. (2016). Introduction to Linear Algebra (5th ed.). Wellesley-Cambridge Press.
-Lay, D. C. (2007). Linear Algebra and Its Applications (3rd ed.). Pearson.
-Horn, R. A., & Johnson, C. R. (2012). Matrix Analysis (2nd ed.). Cambridge University Press.
-Axler, S. (2015). Linear Algebra Done Right (3rd ed.). Springer.
+- Strang, G. (2016). Introduction to Linear Algebra (5th ed.). Wellesley-Cambridge Press.
+- Lay, D. C. (2007). Linear Algebra and Its Applications (3rd ed.). Pearson.
+- Horn, R. A., & Johnson, C. R. (2012). Matrix Analysis (2nd ed.). Cambridge University Press.
+- Axler, S. (2015). Linear Algebra Done Right (3rd ed.). Springer.
