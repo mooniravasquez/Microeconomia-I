@@ -6,8 +6,8 @@ Una **Ecuación Diferencial Ordinaria (EDO) lineal de primer orden** se expresa 
 $$ \frac{d\mathbf{x}}{dt} = A\mathbf{x} $$
 
 donde:
--X es el vector incógnita con dos funciones de t.
--A es una matriz $2 \times 2$ de coeficientes constantes.
+- X es el vector incógnita con dos funciones de t.
+- A es una matriz $2 \times 2$ de coeficientes constantes.
 - $\frac{d\mathbf{x}}{dt}$ representa la derivada de cada función con respecto a t.
 
 Este sistema de ecuaciones diferenciales se puede resolver usando **valores propios y vectores propios** de $A$.
@@ -62,3 +62,5 @@ Si la matriz 𝐴 tiene coeficientes reales pero los valores propios son complej
 - Lay, D. C. (2007). Linear Algebra and Its Applications (3rd ed.). Pearson.
 - Horn, R. A., & Johnson, C. R. (2012). Matrix Analysis (2nd ed.). Cambridge University Press.
 - Axler, S. (2015). Linear Algebra Done Right (3rd ed.). Springer.
+- Strang, G. (2016). Introduction to Linear Algebra.
+- Boyce, W. E., & DiPrima, R. C. (2017). Elementary Differential Equations.
