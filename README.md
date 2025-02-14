@@ -25,4 +25,5 @@ Una matriz A de n × n es diagonalizable si, y sólo si, A tiene n vectores prop
 
 ## Valores propios reales e iguales
 Cuando los valores propios de una matriz son reales e iguales, la matriz puede no ser diagonalizable, pero todavía se puede reducir a una forma de Jordan.
-
+Si la matriz no es diagonalizable se calculan los vectores propios resolviendo (A-𝜆I)x=0 
+Si no hay suficientes, se buscan vectores propios generalizados, resolviendo (𝐴−𝜆𝐼)^𝑘*𝑥=0 para 𝑘>1
