@@ -6,13 +6,11 @@ Una **Ecuación Diferencial Ordinaria (EDO) lineal de primer orden** se expresa 
 $$ \frac{d\mathbf{x}}{dt} = A\mathbf{x} $$
 
 donde:
-- $\mathbf{x} = \begin{pmatrix} x_1 \\ x_2 \end{pmatrix}$ es el **vector incógnita** con dos funciones de $t$.
-- $A = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}$ es una **matriz $2 \times 2$ de coeficientes constantes**.
-- $\frac{d\mathbf{x}}{dt}$ representa la **derivada de cada función con respecto a $t$**.
+-X es el vector incógnita con dos funciones de t.
+-A es una matriz $2 \times 2$ de coeficientes constantes.
+- $\frac{d\mathbf{x}}{dt}$ representa la derivada de cada función con respecto a t.
 
 Este sistema de ecuaciones diferenciales se puede resolver usando **valores propios y vectores propios** de $A$.
-
-
 
 # Valores y Vectores Propios
 Dentro del siguiente repositorio se encontrarán bases y conceptos clave para entender Microeconomía. El primer tema a abordarse es entender que son los Valores y Vectores Propios.
