@@ -1,76 +1,18 @@
 # Ecuaciones Diferenciales Ordinarias (EDOs)?
 Las Ecuaciones Diferenciales Ordinarias (EDOs) son ecuaciones que relacionan una función desconocida con sus derivadas. Se llaman ordinarias porque involucran derivadas respecto a una sola variable independiente.
 
-Una Ecuación Diferencial Ordinaria (EDO) lineal de primer orden se expresa como:
-(𝑑𝑥/𝑑𝑡)=𝐴𝑥
+Una **Ecuación Diferencial Ordinaria (EDO) lineal de primer orden** se expresa como:
+
+\[ \frac{d\mathbf{x}}{dt} = A\mathbf{x} \]
 
 donde:
-$$
-\begin{bmatrix}
-x1 & x2 \\
-\end{bmatrix}
-$$
+- \( \mathbf{x} = \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} \) es el vector incógnita con dos funciones de \( t \).
+- \( A = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix} \) es una matriz \( 2 \times 2 \) de coeficientes constantes.
+- \( \frac{d\mathbf{x}}{dt} \) representa la derivada de cada función con respecto a \( t \).
 
-​
- 
-x 
-2
-​
- 
-​
- ) es el vector incógnita con dos funciones de 
-𝑡
-t.
-𝐴
-=
-(
-𝑎
-11
-𝑎
-12
-𝑎
-21
-𝑎
-22
-)
-A=( 
-a 
-11
-​
- 
-a 
-21
-​
- 
-​
-  
-a 
-12
-​
- 
-a 
-22
-​
- 
-​
- ) es una matriz 
-2
-×
-2
-2×2 de coeficientes constantes.
-𝑑
-𝑥
-𝑑
-𝑡
-dt
-dx
-​
-  representa la derivada de cada función con respecto a 
-𝑡
-t.
-Este sistema de ecuaciones diferenciales se puede resolver usando valores propios y vectores propios de 
-𝐴
-A.
+Este sistema de ecuaciones diferenciales se puede resolver usando valores propios y vectores propios de \( A \).
+
+
 
 # Valores y Vectores Propios
 Dentro del siguiente repositorio se encontrarán bases y conceptos clave para entender Microeconomía. El primer tema a abordarse es entender que son los Valores y Vectores Propios.
