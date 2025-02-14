@@ -40,7 +40,7 @@ Pasos a seguir
 1. Se calculan los valores propios resolviendo det(A−λI)=0.
 2. Se encuentran los vectores propios complejos resolviendo (A−λI)x=0.
 3. Como la matriz tiene coeficientes reales, en lugar de vectores propios complejos se usan pares de bases reales, formadas por la parte real e imaginaria de los vectores propios complejos.
-4. La matriz no es diagonalizable en el espacio real, pero se puede escribir en forma canónica de Jordan o en una forma de bloques de rotación de la forma:
+4. La matriz no es diagonalizable en el espacio real, pero se puede escribir en forma canónica de Jordan o en una forma de bloques de rotación. Donde cada bloque de  2×2 representa la acción de una transformación con valores propios a±bi (Lay, 2015).
 
 ## Referencias
 Strang, G. (2016). Introduction to Linear Algebra (5th ed.). Wellesley-Cambridge Press.
