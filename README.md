@@ -1,4 +1,29 @@
-# Ecuaciones Diferenciales Ordinarias (EDOs)?
+# Resolviendo Ecuaciones Diferenciales Ordinarias (EDOs) con Matrices
+
+## 📌 Introducción
+Este repositorio explica cómo resolver ecuaciones diferenciales ordinarias (EDOs) de primer orden en **forma matricial (2x2)**, utilizando valores y vectores propios.
+
+## ✏️ Planteamiento del Problema
+Dado un sistema de ecuaciones diferenciales:
+
+```
+ x1' = a11 * x1 + a12 * x2
+ x2' = a21 * x1 + a22 * x2
+```
+
+En forma matricial:
+
+```
+    [ x1' ]   =  [ a11  a12 ] [ x1 ]
+    [ x2' ]      [ a21  a22 ] [ x2 ]
+```
+
+O más compacto:
+
+```
+    x' = A * x
+```
+# Ecuaciones Diferenciales Ordinarias (EDOs)
 Las Ecuaciones Diferenciales Ordinarias (EDOs) son ecuaciones que relacionan una función desconocida con sus derivadas. Se llaman ordinarias porque involucran derivadas respecto a una sola variable independiente.
 
 Una **Ecuación Diferencial Ordinaria (EDO) lineal de primer orden** en forma matricial se expresa como:
@@ -14,7 +39,7 @@ donde:
 Este sistema de ecuaciones diferenciales se puede resolver usando **valores propios y vectores propios** de $A$.
 
 # Valores y Vectores Propios
-Dentro del siguiente repositorio se encontrarán bases y conceptos clave para entender Microeconomía. El primer tema a abordarse es entender que son los Valores y Vectores Propios.
+
 "Un vector propio de una matriz A de n × n es un vector x diferente de cero tal que Ax = λx para algún escalar λ. Un escalar λ se llama valor propio de A si existe una solución no trivial x de Ax = λx; una x como ésta se denomina vector propio correspondiente a λ" (Lay, 2007)
 
 ## Características de los valores propios
@@ -95,7 +120,6 @@ Cuando los valores propios son complejos:
     x(t) = e^(a t) * (C1 * cos(bt) + C2 * sin(bt))
 ```
 
-
 ## Referencias
 - Strang, G. (2016). Introduction to Linear Algebra (5th ed.). Wellesley-Cambridge Press.
 - Lay, D. C. (2007). Linear Algebra and Its Applications (3rd ed.). Pearson.
@@ -104,6 +128,10 @@ Cuando los valores propios son complejos:
 - Strang, G. (2016). Introduction to Linear Algebra.
 - Robinson, J. (2004). An Introduction to Elementary Differential Equations. Cambridge.
 - Hoffman, K., & Kunze, R. (1971). Linear Algebra (2nd Edition). Pearson
+
+
+
+
 
 
 
