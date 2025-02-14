@@ -8,13 +8,13 @@ Los valores propios de una matriz pueden clasificarse en diferentes tipos, en do
 3. Reales y Complejos
 
 Para encontrar los valores propios de una matriz 𝐴 se sigue este procedimiento:
-1.- Se calcula el polinomio característico de la matriz, que se obtiene al resolver el determinante de 
+1. Se calcula el polinomio característico de la matriz, que se obtiene al resolver el determinante de 
 A-𝜆I:
     det(A-𝜆I)=0
 
-2.-Se resuelve la ecuación resultante para encontrar los valores de 𝜆 que corresponden a los valores propios de A (Strang, 2016).
+2. Se resuelve la ecuación resultante para encontrar los valores de 𝜆 que corresponden a los valores propios de A (Strang, 2016).
 
-3.- Para cada λ, se encuentra el vector propio resolviendo el sistema homogéneo:
+3. Para cada λ, se encuentra el vector propio resolviendo el sistema homogéneo:
 (𝐴−𝜆𝐼)𝑥=0
 
 ## Valores propios reales y desiguales
